@@ -1,5 +1,7 @@
 package br.com.treinaweb.semana2;
 
+import java.util.ArrayList;
+
 public class EstruturasDeRepeticao {
     public static void main(String[] args) {
         // while e do-while
@@ -15,8 +17,19 @@ public class EstruturasDeRepeticao {
         } while (contador <= 1000);
 
         // for
-        for (var contador2 = 1; contador2 <= 1000; contador2++) {
-            System.out.println("Número " + contador2);
+        var notas = new ArrayList<Double>();
+        notas.add(10.0);
+        notas.add(8.5);
+        notas.add(9.1);
+        notas.add(7.2);
+
+        for (var index = 0; index < notas.size(); index++) {
+            System.out.println(notas.get(index));
+        }
+
+        // foreach
+        for (Double nota : notas) {
+            System.out.println(nota);
         }
     }
 }
