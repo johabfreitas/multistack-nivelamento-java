@@ -1,6 +1,7 @@
 package br.com.treinaweb.semana2;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Collections {
     public static void main(String[] args) {
@@ -11,5 +12,13 @@ public class Collections {
         notas.add(7.1);
 
         System.out.println(notas.size());
+
+        // Map
+        var medias = new HashMap<String, Double>();
+        medias.put("Hanashiro", 10.0);
+        medias.put("Fagner", 8.7);
+        medias.put("Elton", 5.1);
+
+        System.out.println(medias.get("elton"));
     }
 }
