@@ -11,5 +11,13 @@ public class EstruturaCondicionais {
         } else {
             System.out.println("Você é menor de idade");
         }
+
+        var mesDoAno = 2;
+        switch (mesDoAno) {
+            case 1 -> System.out.println("Janeiro");
+            case 2 -> System.out.println("Fevereiro");
+            case 3 -> System.out.println("Março");
+            default -> System.out.println("Mês invalido");
+        }
     }
 }
