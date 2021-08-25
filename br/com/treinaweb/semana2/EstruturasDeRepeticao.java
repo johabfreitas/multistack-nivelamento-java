@@ -13,5 +13,10 @@ public class EstruturasDeRepeticao {
             System.out.println("Número " + contador);
             contador++;
         } while (contador <= 1000);
+
+        // for
+        for (var contador2 = 1; contador2 <= 1000; contador2++) {
+            System.out.println("Número " + contador2);
+        }
     }
 }
